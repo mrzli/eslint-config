@@ -1,8 +1,8 @@
 import { Linter } from 'eslint';
-import { EslintConfigInput } from './types/input';
+import { EslintConfigOptions } from './types/input';
 
-export function getEsLintConfig(input: EslintConfigInput): Linter.Config {
-  const { executionEnvironment } = input;
+export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
+  const { executionEnvironment } = options;
 
   const isReact = executionEnvironment === 'react';
   const isNode = executionEnvironment === 'node';

@@ -1,5 +1,5 @@
 import { EslintExecutionEnvironment } from './execution-environment';
 
-export interface EslintConfigInput {
+export interface EslintConfigOptions {
   readonly executionEnvironment: EslintExecutionEnvironment;
 }
