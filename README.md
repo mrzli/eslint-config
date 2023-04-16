@@ -17,8 +17,10 @@ module.exports = {
 ## API
 
 - `getEsLintConfig(options)`: Returns an ESLint config object.
-  - `options.executionEnvironment`: The execution environment of the project. One of:
-    - `'shared'`: For projects to be used from   either Node or Browser.
-    - `'node'`: For Node.js projects.
-    - `'browser'`: For browser projects.
-    - `'react'`: For React projects.
+  - `options.executionEnvironment`
+    - The execution environment of the project.
+    - One of:
+      - `'shared'` - For projects to be used from either Node or Browser.
+      - `'node'` - For Node.js projects.
+      - `'browser'` - For browser projects.
+      - `'react'` - For React projects.
