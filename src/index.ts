@@ -57,6 +57,7 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
           ignoreRestSiblings: true,
         },
       ],
+      'unicorn/prefer-top-level-await': 'off',
     },
     overrides: [
       {
@@ -80,8 +81,9 @@ export const NODE_PLUGINS = [] as const;
 export const NODE_EXTENDS = ['plugin:n/recommended'] as const;
 
 export const NODE_RULES: Linter.RulesRecord = {
-  'n/no-unsupported-features/es-syntax': 'off',
   'n/no-missing-import': 'off',
+  'n/no-unpublished-import': 'off',
+  'n/no-unsupported-features/es-syntax': 'off',
 };
 
 export const REACT_PLUGINS = ['react', 'react-hooks', 'jsx-a11y'] as const;

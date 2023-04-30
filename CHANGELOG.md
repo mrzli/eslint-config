@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.5] - 2023-04-30
+
+### Changed
+
+- Turned off some `eslint-plugin-unicorn` and `eslint-plugin-n` rules.
+
 ## [0.0.4] - 2023-04-30
 
 ### Added
