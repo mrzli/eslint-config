@@ -1,5 +1,5 @@
-import { EslintExecutionEnvironment } from './execution-environment';
+import { ProjectType } from './project-type';
 
 export interface EslintConfigOptions {
-  readonly executionEnvironment: EslintExecutionEnvironment;
+  readonly projectType: ProjectType;
 }

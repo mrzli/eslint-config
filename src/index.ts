@@ -2,12 +2,12 @@ import { Linter } from 'eslint';
 import { EslintConfigOptions } from './types/input';
 
 export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
-  const { executionEnvironment } = options;
+  const { projectType } = options;
 
-  const isReact = executionEnvironment === 'react';
-  const isNode = executionEnvironment === 'node';
-  const isBrowser = executionEnvironment === 'browser';
-  // const isShared = executionEnvironment === 'shared';
+  const isReact = projectType === 'react';
+  const isNode = projectType === 'node';
+  const isBrowser = projectType === 'browser';
+  // const isShared = projectType === 'shared';
 
   return {
     root: true,

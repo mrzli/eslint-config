@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.6] - 2023-04-30
+
+### Changed
+
+- Rename 'execution environment' to 'project type'.
+
 ## [0.0.5] - 2023-04-30
 
 ### Changed
