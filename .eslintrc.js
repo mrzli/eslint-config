@@ -15,6 +15,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
+    'plugin:unicorn/recommended',
+    'plugin:n/recommended',
     'prettier',
   ],
   settings: {
@@ -32,4 +34,13 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['*.{ts,tsx}'],
+      rules: {
+        'n/no-unsupported-features/es-syntax': ['off'],
+        'n/no-missing-import': ['off'],
+      },
+    },
+  ],
 };

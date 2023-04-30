@@ -14,6 +14,8 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
     plugins: [
       '@typescript-eslint',
       'import',
+      'unicorn',
+      ...(isNode ? NODE_PLUGINS : []),
       ...(isReact ? REACT_PLUGINS : []),
     ],
     env: {
@@ -36,6 +38,8 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
       'eslint:recommended',
       'plugin:@typescript-eslint/recommended',
       'plugin:import/recommended',
+      'plugin:unicorn/recommended',
+      ...(isNode ? NODE_EXTENDS : []),
       ...(isReact ? REACT_EXTENDS : []),
       'prettier',
     ],
@@ -56,6 +60,12 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
     },
     overrides: [
       {
+        files: ['*.{ts,tsx}'],
+        rules: {
+          ...(isNode ? NODE_RULES : {}),
+        },
+      },
+      {
         files: ['*.{spec,test}.{ts,tsx,js,jsx}'],
         env: {
           jest: true,
@@ -64,6 +74,15 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
     ],
   };
 }
+
+export const NODE_PLUGINS = [] as const;
+
+export const NODE_EXTENDS = ['plugin:n/recommended'] as const;
+
+export const NODE_RULES: Linter.RulesRecord = {
+  'n/no-unsupported-features/es-syntax': 'off',
+  'n/no-missing-import': 'off',
+};
 
 export const REACT_PLUGINS = ['react', 'react-hooks', 'jsx-a11y'] as const;
 

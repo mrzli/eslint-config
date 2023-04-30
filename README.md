@@ -10,7 +10,7 @@ Create an ESLint config file, for example `.eslintrc.js`:
 const { getEsLintConfig } = require('@gmjs/eslint-config');
 
 module.exports = {
-  ...getEsLintConfig({ executionEnvironment: 'node'}),
+  ...getEsLintConfig({ executionEnvironment: 'node' }),
 };
 ```
 
