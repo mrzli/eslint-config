@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.7] - 2023-05-01
+
+### Changed
+
+- Turn off rules: `unicorn/prefer-module`, `unicorn/prevent-abbreviations`.
+
 ## [0.0.6] - 2023-04-30
 
 ### Changed

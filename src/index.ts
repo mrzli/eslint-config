@@ -57,7 +57,9 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
           ignoreRestSiblings: true,
         },
       ],
+      'unicorn/prefer-module': 'off',
       'unicorn/prefer-top-level-await': 'off',
+      'unicorn/prevent-abbreviations': 'off',
     },
     overrides: [
       {
