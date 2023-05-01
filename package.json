@@ -1,8 +1,12 @@
 {
   "name": "@gmjs/eslint-config",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "eslint-config",
-  "author": "Goran Mržljak (goran.mrzljak@gmail.com)",
+  "author": {
+    "name": "Goran Mržljak",
+    "email": "goran.mrzljak@gmail.com",
+    "url": "https://mrzli.com"
+  },
   "license": "MIT",
   "keywords": [
     "eslint",
@@ -21,6 +25,9 @@
     "url": "https://github.com/mrzli/eslint-config"
   },
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "prettier": "@gmjs/prettier-config",
   "scripts": {
     "start:dev": "ts-node src/index.ts",
@@ -28,7 +35,7 @@
     "lint:nofix": "eslint . && prettier .",
     "test-only": "echo \"test\"",
     "test": "npm run lint && npm run test-only",
-    "build-only": "rm -rf ./dist && tsc",
+    "build-only": "rm -rf ./dist && tsc --project tsconfig.lib.json",
     "build": "npm run test && npm run build-only",
     "pub-only": "npm pub --access public",
     "pub": "npm run build && npm run pub-only"
