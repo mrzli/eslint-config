@@ -1,6 +1,6 @@
 {
   "name": "@gmjs/eslint-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "eslint-config",
   "author": {
     "name": "Goran Mržljak",
@@ -35,7 +35,7 @@
     "lint:nofix": "eslint . && prettier .",
     "test-only": "echo \"test\"",
     "test": "npm run lint && npm run test-only",
-    "build-only": "rm -rf ./dist && tsc --project tsconfig.lib.json",
+    "build-only": "shx rm -rf ./dist && tsc --project tsconfig.lib.json",
     "build": "npm run test && npm run build-only",
     "pub-only": "npm pub --access public",
     "pub": "npm run build && npm run pub-only"
@@ -53,6 +53,7 @@
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "prettier": "^2.8.7",
+    "shx": "^0.3.4",
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
