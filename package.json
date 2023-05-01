@@ -4,7 +4,18 @@
   "description": "eslint-config",
   "author": "Goran Mržljak (goran.mrzljak@gmail.com)",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint-configuration",
+    "linter",
+    "linting",
+    "javascript-linter",
+    "code-quality",
+    "static-analysis",
+    "style-guide",
+    "coding-style"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mrzli/eslint-config"
