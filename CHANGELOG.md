@@ -4,6 +4,26 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.10] - 2023-05-07
+
+### Changed
+
+- Update dependencies.
+
+## [0.0.9] - 2023-05-02
+
+### Changed
+
+- Make scripts cross-platform.
+
+## [0.0.8] - 2023-05-02
+
+### Changed
+
+- Include `dist` folder when publishing.
+- Use `tsconfig.lib.json` for `tsc` command.
+- Update keywords.
+
 ## [0.0.7] - 2023-05-01
 
 ### Changed
