@@ -1,6 +1,12 @@
 # ESLint Config
 
-Has a function used to create an ESLint config object.
+This package contains a function used to create an ESLint config object.
+
+## Installation
+
+```bash
+npm install --save-dev @gmjs/eslint-config
+```
 
 ## Usage
 
