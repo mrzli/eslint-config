@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.13] - 2023-06-09
+
+### Changed
+
+- Add some typescript rules.
+
 ## [0.0.12] - 2023-06-09
 
 ### Changed
