@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.12] - 2023-06-09
+
+### Changed
+
+- Turn off rules `unicorn/no-array-reduce`, `unicorn/no-useless-undefined`.
+
 ## [0.0.11] - 2023-06-03
 
 ### Changed

@@ -60,6 +60,8 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
       'unicorn/prefer-module': 'off',
       'unicorn/prefer-top-level-await': 'off',
       'unicorn/prevent-abbreviations': 'off',
+      'unicorn/no-array-reduce': 'off',
+      'unicorn/no-useless-undefined': 'off',
     },
     overrides: [
       {
