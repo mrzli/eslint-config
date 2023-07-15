@@ -78,6 +78,9 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
         env: {
           jest: true,
         },
+        rules: {
+          'unicorn/consistent-function-scoping': 'off',
+        },
       },
     ],
   };

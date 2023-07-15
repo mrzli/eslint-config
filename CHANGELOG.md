@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.14] - 2023-07-15
+
+### Changed
+
+- Turn off `unicorn/consistent-function-scoping` rule for tests.
+
 ## [0.0.13] - 2023-06-09
 
 ### Changed
