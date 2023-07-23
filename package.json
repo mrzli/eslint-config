@@ -1,7 +1,7 @@
 {
   "name": "@gmjs/eslint-config",
-  "version": "0.0.15",
-  "description": "eslint-config",
+  "version": "0.0.16",
+  "description": "ESLint configuration.",
   "author": {
     "name": "Goran Mržljak",
     "email": "goran.mrzljak@gmail.com",
@@ -24,30 +24,28 @@
     "type": "git",
     "url": "https://github.com/mrzli/eslint-config"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "prettier": "@gmjs/prettier-config",
+  "main": "src/index.js",
   "scripts": {
     "start:dev": "ts-node src/index.ts",
     "lint": "eslint --fix . && prettier --write .",
     "lint:nofix": "eslint . && prettier .",
-    "test-only": "echo \"test\"",
+    "test-only": "echo \"no tests\"",
     "test": "npm run lint && npm run test-only",
     "build-only": "shx rm -rf ./dist && tsc --project tsconfig.lib.json",
     "build": "npm run test && npm run build-only",
-    "pub-only": "npm pub --access public",
+    "pub-only": "npmpub",
     "pub": "npm run build && npm run pub-only"
   },
   "dependencies": {
     "tslib": "^2.6.0"
   },
   "devDependencies": {
+    "@gmjs/npm-publish-cli": "^0.0.2",
     "@gmjs/prettier-config": "^1.0.2",
+    "@gmjs/tsconfig": "^1.0.0",
     "@types/eslint": "^8.44.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.5",
@@ -81,5 +79,6 @@
     "eslint-plugin-react-hooks": {
       "optional": true
     }
-  }
+  },
+  "prettier": "@gmjs/prettier-config"
 }
