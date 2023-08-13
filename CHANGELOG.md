@@ -4,6 +4,18 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.18] - 2023-08-08
+
+### Fixed
+
+- Fix publish process.
+
+## [0.0.17] - 2023-08-08
+
+### Changed
+
+- Update dependencies to latest versions.
+
 ## [0.0.16] - 2023-07-23
 
 ### Changed
