@@ -4,6 +4,13 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.20] - 2023-09-18
+
+### Changed
+
+- Ignore `jsx` and `tsx` files in `unicorn/filename-case` (allows React component files to be Pascal cased).
+- Ignore imports starting with `/` in `import/no-unresolved` (allows imports from Vite public folder).
+
 ## [0.0.19] - 2023-09-18
 
 ### Changed

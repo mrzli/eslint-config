@@ -60,11 +60,24 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
           ignoreRestSiblings: true,
         },
       ],
+      'import/no-unresolved': [
+        'error',
+        {
+          ignore: ['^/'],
+        },
+      ],
       'unicorn/prefer-module': 'off',
       'unicorn/prefer-top-level-await': 'off',
       'unicorn/prevent-abbreviations': 'off',
       'unicorn/no-array-reduce': 'off',
       'unicorn/no-useless-undefined': 'off',
+      'unicorn/filename-case': [
+        'error',
+        {
+          case: 'kebabCase',
+          ignore: ['\\.(jsx|tsx)$'],
+        },
+      ],
       ...(isReact ? REACT_RULES : {}),
     },
     overrides: [
