@@ -65,6 +65,7 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
       'unicorn/prevent-abbreviations': 'off',
       'unicorn/no-array-reduce': 'off',
       'unicorn/no-useless-undefined': 'off',
+      ...(isReact ? REACT_RULES : {}),
     },
     overrides: [
       {
@@ -96,10 +97,22 @@ export const NODE_RULES: Linter.RulesRecord = {
   'n/no-unsupported-features/es-syntax': 'off',
 };
 
-export const REACT_PLUGINS = ['react', 'react-hooks', 'jsx-a11y'] as const;
+export const REACT_PLUGINS = [
+  'react',
+  'react-hooks',
+  'jsx-a11y',
+  'react-refresh',
+] as const;
 
 export const REACT_EXTENDS = [
   'plugin:react/recommended',
   'plugin:react-hooks/recommended',
   'plugin:jsx-a11y/recommended',
 ] as const;
+
+export const REACT_RULES: Linter.RulesRecord = {
+  'react-refresh/only-export-components': [
+    'warn',
+    { allowConstantExport: true },
+  ],
+};

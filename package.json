@@ -1,6 +1,6 @@
 {
   "name": "@gmjs/eslint-config",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "ESLint configuration.",
   "author": {
     "name": "Goran Mržljak",
@@ -37,22 +37,22 @@
     "pub": "npm run build && npm run pub-only"
   },
   "dependencies": {
-    "tslib": "^2.6.1"
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@gmjs/npm-publish-cli": "^0.0.4",
-    "@gmjs/prettier-config": "^1.0.2",
-    "@gmjs/tsconfig": "^1.0.0",
+    "@gmjs/prettier-config": "^1.0.45",
+    "@gmjs/tsconfig": "^1.0.9",
     "@types/eslint": "^8.44.2",
-    "@typescript-eslint/eslint-plugin": "^6.3.0",
-    "@typescript-eslint/parser": "^6.3.0",
-    "eslint": "^8.47.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.0",
-    "eslint-plugin-import": "^2.28.0",
-    "prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.28.1",
+    "prettier": "^3.0.3",
     "shx": "^0.3.4",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.3.0",
@@ -65,6 +65,7 @@
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-unicorn": "^48.0.1",
     "prettier": "^3.0.1",
     "typescript": "^5.1.6"

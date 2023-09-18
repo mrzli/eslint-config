@@ -4,6 +4,14 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.19] - 2023-09-18
+
+### Changed
+
+- Update 'react' config.
+- Change package manager to `pnpm`.
+- Update dependencies to latest versions.
+
 ## [0.0.18] - 2023-08-08
 
 ### Fixed
