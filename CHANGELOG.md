@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.21] - 2023-09-20
+
+### Changed
+
+- Turn of rule `no-fallthrough` for `switch` statements since it is handled by TypeScript.
+
 ## [0.0.20] - 2023-09-18
 
 ### Changed

@@ -49,6 +49,7 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
       },
     },
     rules: {
+      'no-fallthrough': 'off', // handled by typescript
       '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/explicit-member-accessibility': 'error',
       '@typescript-eslint/explicit-module-boundary-types': 'error',
