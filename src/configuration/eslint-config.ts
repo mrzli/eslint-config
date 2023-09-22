@@ -122,6 +122,7 @@ export const REACT_EXTENDS = [
   'plugin:react/recommended',
   'plugin:react-hooks/recommended',
   'plugin:jsx-a11y/recommended',
+  'plugin:storybook/recommended',
 ] as const;
 
 export const REACT_RULES: Linter.RulesRecord = {

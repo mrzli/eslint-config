@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.22] - 2023-09-22
+
+### Changed
+
+- Add storybook plugin to react eslint config.
+
 ## [0.0.21] - 2023-09-20
 
 ### Changed
