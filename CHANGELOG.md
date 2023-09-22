@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.23] - 2023-09-22
+
+### Changed
+
+- Turn off `react/jsx-uses-react` and `react/react-in-jsx-scope` rules since they are not required for newer versions of React.
+
 ## [0.0.22] - 2023-09-22
 
 ### Changed
