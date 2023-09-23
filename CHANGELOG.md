@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.24] - 2023-09-23
+
+### Changed
+
+- Add `storybook` parameter to `react` config input.
+
 ## [0.0.23] - 2023-09-22
 
 ### Changed

@@ -1,7 +1,9 @@
 import { Linter } from 'eslint';
-import { EslintConfigOptions } from '../types';
+import { EslintConfigOptionsAny, EslintConfigOptionsReact } from '../types';
 
-export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
+export function getEsLintConfig(
+  options: EslintConfigOptionsAny,
+): Linter.Config {
   const { projectType } = options;
 
   const isReact = projectType === 'react';
@@ -40,7 +42,7 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
       'plugin:import/recommended',
       'plugin:unicorn/recommended',
       ...(isNode ? NODE_EXTENDS : []),
-      ...(isReact ? REACT_EXTENDS : []),
+      ...(isReact ? getReactExtends(options) : []),
       'prettier',
     ],
     settings: {
@@ -101,31 +103,35 @@ export function getEsLintConfig(options: EslintConfigOptions): Linter.Config {
   };
 }
 
-export const NODE_PLUGINS = [] as const;
+const NODE_PLUGINS = [] as const;
 
-export const NODE_EXTENDS = ['plugin:n/recommended'] as const;
+const NODE_EXTENDS = ['plugin:n/recommended'] as const;
 
-export const NODE_RULES: Linter.RulesRecord = {
+const NODE_RULES: Linter.RulesRecord = {
   'n/no-missing-import': 'off',
   'n/no-unpublished-import': 'off',
   'n/no-unsupported-features/es-syntax': 'off',
 };
 
-export const REACT_PLUGINS = [
+const REACT_PLUGINS = [
   'react',
   'react-hooks',
   'jsx-a11y',
   'react-refresh',
 ] as const;
 
-export const REACT_EXTENDS = [
-  'plugin:react/recommended',
-  'plugin:react-hooks/recommended',
-  'plugin:jsx-a11y/recommended',
-  'plugin:storybook/recommended',
-] as const;
+function getReactExtends(options: EslintConfigOptionsReact) {
+  const { storybook } = options;
 
-export const REACT_RULES: Linter.RulesRecord = {
+  return [
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+    ...(storybook ? ['plugin:storybook/recommended'] : []),
+  ];
+}
+
+const REACT_RULES: Linter.RulesRecord = {
   'react/jsx-uses-react': 'off',
   'react/react-in-jsx-scope': 'off',
   'react-refresh/only-export-components': [
