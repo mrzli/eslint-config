@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.25] - 2023-09-24
+
+### Changed
+
+- Disable `react-hooks/rules-of-hooks` for storybook files due to incompatilibility with CSF 3 format.
+
 ## [0.0.24] - 2023-09-23
 
 ### Changed

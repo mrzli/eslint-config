@@ -11,6 +11,9 @@ export function getEsLintConfig(
   const isBrowser = projectType === 'browser';
   // const isShared = projectType === 'shared';
 
+  // eslint-disable-next-line unicorn/consistent-destructuring
+  const isStorybook = isReact && options.storybook;
+
   return {
     root: true,
     plugins: [
@@ -99,6 +102,16 @@ export function getEsLintConfig(
           'unicorn/consistent-function-scoping': 'off',
         },
       },
+      ...(isStorybook
+        ? ([
+            {
+              files: ['*.stories.tsx'],
+              rules: {
+                'react-hooks/rules-of-hooks': 'off',
+              },
+            },
+          ] as Linter.ConfigOverride[])
+        : []),
     ],
   };
 }
