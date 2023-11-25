@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.27] - 2023-11-25
+
+### Changed
+
+- Revert ts to version 5.2.\* due to an issue in later version with running tests.
+
 ## [0.0.26] - 2023-11-25
 
 ### Changed
