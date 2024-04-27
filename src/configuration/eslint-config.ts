@@ -2,7 +2,7 @@ import { Linter } from 'eslint';
 import globals from 'globals';
 import pluginJs from '@eslint/js';
 import pluginTs from 'typescript-eslint';
-import pluginImport from 'eslint-plugin-import';
+// import pluginImport from 'eslint-plugin-import';
 import pluginUnicorn from 'eslint-plugin-unicorn';
 import pluginN from 'eslint-plugin-n';
 import pluginReact from 'eslint-plugin-react';
@@ -65,28 +65,28 @@ export function getEsLintConfigs(
     // END - js/ts
 
     // START - import
-    // will possibly need to comment out until this is updated for the flat config
-    {
-      name: 'import',
-      plugins: {
-        import: pluginImport,
-      },
-      settings: {
-        'import/resolver': {
-          typescript: true,
-          node: true,
-        },
-      },
-      rules: {
-        // ...importPlugin.configs['recommended'].rules,
-        'import/no-unresolved': [
-          'error',
-          {
-            ignore: ['^/'],
-          },
-        ],
-      },
-    },
+    // // will possibly need to comment out until this is updated for the flat config
+    // {
+    //   name: 'import',
+    //   plugins: {
+    //     import: pluginImport,
+    //   },
+    //   settings: {
+    //     'import/resolver': {
+    //       typescript: true,
+    //       node: true,
+    //     },
+    //   },
+    //   rules: {
+    //     // ...importPlugin.configs['recommended'].rules,
+    //     'import/no-unresolved': [
+    //       'error',
+    //       {
+    //         ignore: ['^/'],
+    //       },
+    //     ],
+    //   },
+    // },
     // END - import
 
     // START - unicorn

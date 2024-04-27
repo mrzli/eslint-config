@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.31] - 2024-04-27
+
+### Changed
+
+- Commented out `import` plugin.
+
 ## [0.0.30] - 2024-04-27
 
 ### Changed
