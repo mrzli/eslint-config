@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.32] - 2024-04-27
+
+### Changed
+
+- Unused eslint directives now throw an error instead of a warning.
+
 ## [0.0.31] - 2024-04-27
 
 ### Changed

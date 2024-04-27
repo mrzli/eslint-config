@@ -30,7 +30,7 @@ export function getEsLintConfigs(
     {
       name: 'general',
       linterOptions: {
-        reportUnusedDisableDirectives: true,
+        reportUnusedDisableDirectives: 'error',
       },
     },
     // END - general
