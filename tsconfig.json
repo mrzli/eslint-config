@@ -1,6 +1,19 @@
 {
-  "extends": "@gmjs/tsconfig",
   "compilerOptions": {
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "strict": true,
+    "importHelpers": true,
+    "newLine": "lf",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "types": [],
     "rootDir": ".",
     "outDir": "./dist"
   },

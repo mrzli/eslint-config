@@ -1,0 +1,9 @@
+declare module '@eslint/js';
+declare module 'eslint-plugin-import';
+declare module 'eslint-plugin-unicorn';
+declare module 'eslint-plugin-react';
+declare module 'eslint-plugin-react-hooks';
+declare module 'eslint-plugin-jsx-a11y';
+declare module 'eslint-plugin-react-refresh';
+declare module 'eslint-plugin-storybook';
+declare module 'eslint-config-prettier';

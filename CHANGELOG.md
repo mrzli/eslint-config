@@ -4,6 +4,14 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.29] - 2024-04-27
+
+### Changed
+
+- Update to flat EsLint configuration.
+- Update dependencies to latest versions.
+- Update project configurations.
+
 ## [0.0.28] - 2023-12-21
 
 ### Changed
