@@ -28,6 +28,7 @@ export function getEsLintConfigs(
   return [
     // START - general
     {
+      name: 'general',
       linterOptions: {
         reportUnusedDisableDirectives: true,
       },
@@ -38,12 +39,14 @@ export function getEsLintConfigs(
     pluginJs.configs.recommended,
     ...pluginTs.configs.recommended,
     {
+      name: 'js/ts overrides',
       files: ['**/*.{js,jsx,ts,tsx}'],
       rules: {
         'no-fallthrough': 'off', // handled by typescript itself
       },
     },
     {
+      name: 'ts-only overrides',
       files: ['**/*.{ts,tsx}'],
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'error',
@@ -64,6 +67,7 @@ export function getEsLintConfigs(
     // START - import
     // will possibly need to comment out until this is updated for the flat config
     {
+      name: 'import',
       plugins: {
         import: pluginImport,
       },
@@ -88,6 +92,7 @@ export function getEsLintConfigs(
     // START - unicorn
     pluginUnicorn.configs['flat/recommended'],
     {
+      name: 'unicorn overrides',
       files: ['**/*.{js,jsx,ts,tsx}'],
       rules: {
         'unicorn/prefer-module': 'off',
@@ -108,6 +113,7 @@ export function getEsLintConfigs(
 
     // START - tests
     {
+      name: 'tests',
       files: ['**/*.{spec,test}.{ts,tsx,js,jsx}'],
       rules: {
         'unicorn/consistent-function-scoping': 'off',
@@ -131,6 +137,7 @@ export function getEsLintConfigs(
 function getNodeConfigs(): readonly Linter.FlatConfig[] {
   return [
     {
+      name: 'node main',
       languageOptions: {
         globals: {
           ...globals.node,
@@ -139,6 +146,7 @@ function getNodeConfigs(): readonly Linter.FlatConfig[] {
     },
     pluginN.configs['flat/recommended'],
     {
+      name: 'node ts-only overrides',
       files: ['**/*.{ts,tsx}'],
       rules: {
         'n/no-missing-import': 'off',
@@ -152,6 +160,7 @@ function getNodeConfigs(): readonly Linter.FlatConfig[] {
 function getBrowserConfigs(): readonly Linter.FlatConfig[] {
   return [
     {
+      name: 'browser main',
       languageOptions: {
         globals: {
           ...globals.browser,
@@ -164,6 +173,7 @@ function getBrowserConfigs(): readonly Linter.FlatConfig[] {
 function getReactConfigs(isStorybook: boolean): readonly Linter.FlatConfig[] {
   return [
     {
+      name: 'react main',
       languageOptions: {
         parserOptions: {
           ecmaFeatures: {
@@ -177,6 +187,7 @@ function getReactConfigs(isStorybook: boolean): readonly Linter.FlatConfig[] {
       },
     },
     {
+      name: 'react',
       files: ['**/*.{js,jsx,ts,tsx}'],
       plugins: {
         react: pluginReact,
@@ -188,6 +199,7 @@ function getReactConfigs(isStorybook: boolean): readonly Linter.FlatConfig[] {
       },
     },
     {
+      name: 'react-hooks',
       files: ['**/*.{js,jsx,ts,tsx}'],
       plugins: {
         'react-hooks': pluginReactHooks,
@@ -198,6 +210,7 @@ function getReactConfigs(isStorybook: boolean): readonly Linter.FlatConfig[] {
       },
     },
     {
+      name: 'jsx-a11y',
       files: ['**/*.{jsx,tsx}'],
       plugins: {
         'jsx-a11y': pluginJsxA11y,
@@ -207,6 +220,7 @@ function getReactConfigs(isStorybook: boolean): readonly Linter.FlatConfig[] {
       },
     },
     {
+      name: 'react-refresh',
       files: ['**/*.{jsx,tsx}'],
       plugins: {
         'react-refresh': pluginReactRefresh,
@@ -225,6 +239,7 @@ function getReactConfigs(isStorybook: boolean): readonly Linter.FlatConfig[] {
 function getStorybookConfigs(): readonly Linter.FlatConfig[] {
   return [
     {
+      name: 'storybook',
       files: ['**/*.stories.{js,jsx,ts,tsx}'],
       plugins: {
         storybook: pluginStorybook,

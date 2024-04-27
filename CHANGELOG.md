@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.30] - 2024-04-27
+
+### Changed
+
+- Add names to flat configs.
+
 ## [0.0.29] - 2024-04-27
 
 ### Changed
