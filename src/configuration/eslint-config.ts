@@ -5,11 +5,11 @@ import pluginTs from 'typescript-eslint';
 // import pluginImport from 'eslint-plugin-import';
 import pluginUnicorn from 'eslint-plugin-unicorn';
 import pluginN from 'eslint-plugin-n';
-import pluginReact from 'eslint-plugin-react';
-import pluginReactHooks from 'eslint-plugin-react-hooks';
-import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
-import pluginStorybook from 'eslint-plugin-storybook';
-import pluginReactRefresh from 'eslint-plugin-react-refresh';
+// import pluginReact from 'eslint-plugin-react';
+// import pluginReactHooks from 'eslint-plugin-react-hooks';
+// import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
+// import pluginStorybook from 'eslint-plugin-storybook';
+// import pluginReactRefresh from 'eslint-plugin-react-refresh';
 import configPrettier from 'eslint-config-prettier';
 import { EslintConfigOptionsAny } from '../types';
 
@@ -172,81 +172,81 @@ function getBrowserConfigs(): readonly Linter.FlatConfig[] {
 
 function getReactConfigs(isStorybook: boolean): readonly Linter.FlatConfig[] {
   return [
-    {
-      name: 'react main',
-      languageOptions: {
-        parserOptions: {
-          ecmaFeatures: {
-            jsx: true,
-          },
-        },
-        globals: {
-          ...globals.serviceworker,
-          ...globals.browser,
-        },
-      },
-    },
-    {
-      name: 'react',
-      files: ['**/*.{js,jsx,ts,tsx}'],
-      plugins: {
-        react: pluginReact,
-      },
-      rules: {
-        ...pluginReact.configs.recommended.rules,
-        'react/jsx-uses-react': 'off',
-        'react/react-in-jsx-scope': 'off',
-      },
-    },
-    {
-      name: 'react-hooks',
-      files: ['**/*.{js,jsx,ts,tsx}'],
-      plugins: {
-        'react-hooks': pluginReactHooks,
-      },
-      rules: {
-        ...pluginReactHooks.configs.recommended.rules,
-        'react-hooks/rules-of-hooks': 'off',
-      },
-    },
-    {
-      name: 'jsx-a11y',
-      files: ['**/*.{jsx,tsx}'],
-      plugins: {
-        'jsx-a11y': pluginJsxA11y,
-      },
-      rules: {
-        ...pluginJsxA11y.configs.recommended.rules,
-      },
-    },
-    {
-      name: 'react-refresh',
-      files: ['**/*.{jsx,tsx}'],
-      plugins: {
-        'react-refresh': pluginReactRefresh,
-      },
-      rules: {
-        'react-refresh/only-export-components': [
-          'warn',
-          { allowConstantExport: true },
-        ],
-      },
-    },
+    // {
+    //   name: 'react main',
+    //   languageOptions: {
+    //     parserOptions: {
+    //       ecmaFeatures: {
+    //         jsx: true,
+    //       },
+    //     },
+    //     globals: {
+    //       ...globals.serviceworker,
+    //       ...globals.browser,
+    //     },
+    //   },
+    // },
+    // {
+    //   name: 'react',
+    //   files: ['**/*.{js,jsx,ts,tsx}'],
+    //   plugins: {
+    //     react: pluginReact,
+    //   },
+    //   rules: {
+    //     ...pluginReact.configs.recommended.rules,
+    //     'react/jsx-uses-react': 'off',
+    //     'react/react-in-jsx-scope': 'off',
+    //   },
+    // },
+    // {
+    //   name: 'react-hooks',
+    //   files: ['**/*.{js,jsx,ts,tsx}'],
+    //   plugins: {
+    //     'react-hooks': pluginReactHooks,
+    //   },
+    //   rules: {
+    //     ...pluginReactHooks.configs.recommended.rules,
+    //     'react-hooks/rules-of-hooks': 'off',
+    //   },
+    // },
+    // {
+    //   name: 'jsx-a11y',
+    //   files: ['**/*.{jsx,tsx}'],
+    //   plugins: {
+    //     'jsx-a11y': pluginJsxA11y,
+    //   },
+    //   rules: {
+    //     ...pluginJsxA11y.configs.recommended.rules,
+    //   },
+    // },
+    // {
+    //   name: 'react-refresh',
+    //   files: ['**/*.{jsx,tsx}'],
+    //   plugins: {
+    //     'react-refresh': pluginReactRefresh,
+    //   },
+    //   rules: {
+    //     'react-refresh/only-export-components': [
+    //       'warn',
+    //       { allowConstantExport: true },
+    //     ],
+    //   },
+    // },
     ...(isStorybook ? getStorybookConfigs() : []),
   ];
 }
 
 function getStorybookConfigs(): readonly Linter.FlatConfig[] {
   return [
-    {
-      name: 'storybook',
-      files: ['**/*.stories.{js,jsx,ts,tsx}'],
-      plugins: {
-        storybook: pluginStorybook,
-      },
-      rules: {
-        ...pluginStorybook.rules,
-      },
-    },
+    // {
+    //   name: 'storybook',
+    //   files: ['**/*.stories.{js,jsx,ts,tsx}'],
+    //   plugins: {
+    //     storybook: pluginStorybook,
+    //   },
+    //   rules: {
+    //     ...pluginStorybook.rules,
+    //   },
+    // },
   ];
 }

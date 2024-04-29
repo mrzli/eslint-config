@@ -4,6 +4,30 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.36] - 2024-04-29
+
+### Changed
+
+- Disable all 'react' plugins until issues are resolved.
+
+## [0.0.35] - 2024-04-29
+
+### Changed
+
+- Comment out 'react-refresh' due to some issue.
+
+## [0.0.34] - 2024-04-29
+
+### Fixed
+
+- Republiush due to version not showing up on npm for some reason.
+
+## [0.0.33] - 2024-04-29
+
+### Changed
+
+- Comment out `storybook` plugin until it is updated to work with flat EsLint configuration.
+
 ## [0.0.32] - 2024-04-27
 
 ### Changed
