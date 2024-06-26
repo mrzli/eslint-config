@@ -7,19 +7,9 @@ settings:
 importers:
   .:
     dependencies:
-      tslib:
-        specifier: ^2.6.2
-        version: 2.6.2
-    devDependencies:
       '@eslint/js':
         specifier: ^9.1.1
         version: 9.1.1
-      '@gmjs/npm-publish-cli':
-        specifier: ^0.0.9
-        version: 0.0.9
-      '@types/eslint':
-        specifier: ^8.56.10
-        version: 8.56.10
       eslint:
         specifier: ^9.1.1
         version: 9.1.1
@@ -59,6 +49,19 @@ importers:
       globals:
         specifier: ^15.0.0
         version: 15.0.0
+      tslib:
+        specifier: ^2.6.2
+        version: 2.6.2
+      typescript-eslint:
+        specifier: ^7.7.1
+        version: 7.7.1(eslint@9.1.1)(typescript@5.4.5)
+    devDependencies:
+      '@gmjs/npm-publish-cli':
+        specifier: ^0.0.9
+        version: 0.0.9
+      '@types/eslint':
+        specifier: ^8.56.10
+        version: 8.56.10
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -68,9 +71,6 @@ importers:
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
-      typescript-eslint:
-        specifier: ^7.7.1
-        version: 7.7.1(eslint@9.1.1)(typescript@5.4.5)
 
 packages:
   '@babel/code-frame@7.24.2':

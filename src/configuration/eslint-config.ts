@@ -100,13 +100,7 @@ export function getEsLintConfigs(
         'unicorn/prevent-abbreviations': 'off',
         'unicorn/no-array-reduce': 'off',
         'unicorn/no-useless-undefined': 'off',
-        'unicorn/filename-case': [
-          'error',
-          {
-            case: 'kebabCase',
-            ignore: ['\\.(jsx|tsx)$'],
-          },
-        ],
+        'unicorn/filename-case': 'off',
       },
     },
     // END - unicorn

@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.37] - 2024-06-27
+
+### Changed
+
+- Disable `unicorn/filename-case` rule.
+
 ## [0.0.36] - 2024-04-29
 
 ### Changed
