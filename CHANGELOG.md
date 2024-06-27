@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.38] - 2024-06-27
+
+### Changed
+
+- Disable `n/hashbang` rule.
+
 ## [0.0.37] - 2024-06-27
 
 ### Changed

@@ -143,6 +143,7 @@ function getNodeConfigs(): readonly Linter.FlatConfig[] {
       name: 'node ts-only overrides',
       files: ['**/*.{ts,tsx}'],
       rules: {
+        'n/hashbang': 'off',
         'n/no-missing-import': 'off',
         'n/no-unpublished-import': 'off',
         'n/no-unsupported-features/es-syntax': 'off',
