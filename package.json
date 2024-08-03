@@ -26,19 +26,18 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "start:dev": "ts-node src/index.ts",
-    "l": "eslint .",
+    "dev": "ts-node src/index.ts",
     "lint": "eslint --fix . && prettier --write .",
     "lint:nofix": "eslint . && prettier --check .",
-    "test-only": "echo \"no tests\"",
-    "test": "pnpm run lint && pnpm run test-only",
+    "test": "echo \"no tests\"",
+    "test+": "pnpm run lint && pnpm run test",
     "clean": "shx rm -rf ./dist",
-    "build-only": "pnpm run clean && tsc --project tsconfig.lib.json",
-    "build": "pnpm run test && pnpm run build-only",
-    "pac-only": "npmpub pack",
-    "pac": "pnpm run build && pnpm run pac-only",
-    "pub-only": "npmpub pub",
-    "pub": "pnpm run pac && pnpm run pub-only"
+    "build": "pnpm run clean && tsc --project tsconfig.lib.json",
+    "build+": "pnpm run test+ && pnpm run build",
+    "pac": "pnpmpub pack -c project.json",
+    "pac+": "pnpm run build+ && pnpm run pac",
+    "pub": "pnpmpub pub -c project.json",
+    "pub+": "pnpm run pac+ && pnpm run pub"
   },
   "dependencies": {
     "@eslint/js": "^9.1.1",
@@ -59,7 +58,7 @@
     "typescript-eslint": "^7.7.1"
   },
   "devDependencies": {
-    "@gmjs/npm-publish-cli": "^0.0.9",
+    "@gmjs/pnpm-publish-cli": "^0.0.5",
     "@types/eslint": "^8.56.10",
     "prettier": "^3.2.5",
     "shx": "^0.3.4",
