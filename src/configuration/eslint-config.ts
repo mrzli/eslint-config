@@ -95,6 +95,17 @@ export function getEsLintConfigs(
       name: 'unicorn overrides',
       files: ['**/*.{js,jsx,ts,tsx}'],
       rules: {
+        'unicorn/consistent-function-scoping': 'off',
+        'unicorn/import-style': [
+          'error',
+          {
+            styles: {
+              path: {
+                named: true,
+              },
+            },
+          },
+        ],
         'unicorn/prefer-module': 'off',
         'unicorn/prefer-top-level-await': 'off',
         'unicorn/prevent-abbreviations': 'off',

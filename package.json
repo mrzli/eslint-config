@@ -1,6 +1,6 @@
 {
   "name": "@gmjs/eslint-config",
-  "version": "0.0.38",
+  "version": "0.0.39",
   "description": "ESLint configuration.",
   "author": {
     "name": "Goran Mržljak",

@@ -4,6 +4,21 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.39] - 2024-08-03
+
+### Changed
+
+- Disable `unicorn/consistent-function-scoping` rule.
+- Allow named import from `path` for `unicorn/import-style` rule.
+- Update npm script names.
+- Change some development dependencies.
+- Update dependencies to latest versions.
+- Update typescript configuration to match current principles and resolve some issues.
+
+### Fixed
+
+- Fix some lint errors.
+
 ## [0.0.38] - 2024-06-27
 
 ### Changed
