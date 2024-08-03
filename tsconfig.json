@@ -1,4 +1,5 @@
 {
+  "include": ["src/**/*.ts"],
   "compilerOptions": {
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
@@ -13,9 +14,12 @@
     "skipLibCheck": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "types": [],
+    "types": ["node"],
     "rootDir": ".",
-    "outDir": "./dist"
-  },
-  "include": ["jest.config.ts", "src/**/*.ts"]
+    "outDir": "./dist",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "lib": ["ES2023"],
+    "target": "ES2022"
+  }
 }
