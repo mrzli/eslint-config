@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.40] - 2024-08-03
+
+### Changed
+
+- Allow named import from `node:path` for `unicorn/import-style` rule.
+
 ## [0.0.39] - 2024-08-03
 
 ### Changed

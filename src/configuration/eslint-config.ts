@@ -103,6 +103,9 @@ export function getEsLintConfigs(
               path: {
                 named: true,
               },
+              'node:path': {
+                named: true,
+              },
             },
           },
         ],
