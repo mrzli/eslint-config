@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.41] - 2024-08-06
+
+### Changed
+
+- Disable `unicorn/no-negated-condition` rule.
+
 ## [0.0.40] - 2024-08-03
 
 ### Changed

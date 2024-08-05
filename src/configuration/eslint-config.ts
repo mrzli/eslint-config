@@ -113,6 +113,7 @@ export function getEsLintConfigs(
         'unicorn/prefer-top-level-await': 'off',
         'unicorn/prevent-abbreviations': 'off',
         'unicorn/no-array-reduce': 'off',
+        'unicorn/no-negated-condition': 'off',
         'unicorn/no-useless-undefined': 'off',
         'unicorn/filename-case': 'off',
       },
