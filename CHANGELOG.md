@@ -4,6 +4,12 @@ All notable changes to the "eslint-config" will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.42] - 2025-03-15
+
+### Changed
+
+- Update dependencies to latest versions.
+
 ## [0.0.41] - 2024-08-06
 
 ### Changed
