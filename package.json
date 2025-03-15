@@ -40,30 +40,30 @@
     "pub+": "pnpm run pac+ && pnpm run pub"
   },
   "dependencies": {
-    "@eslint/js": "^9.8.0",
-    "eslint": "^9.8.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.9.0",
-    "eslint-plugin-n": "^17.10.1",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "eslint-plugin-storybook": "^0.8.0",
-    "eslint-plugin-unicorn": "^55.0.0",
-    "globals": "^15.9.0",
-    "tslib": "^2.6.3",
-    "typescript-eslint": "^8.0.0"
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-import-resolver-typescript": "^3.9.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.16.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-storybook": "^0.11.4",
+    "eslint-plugin-unicorn": "^57.0.0",
+    "globals": "^16.0.0",
+    "tslib": "^2.8.1",
+    "typescript-eslint": "^8.26.1"
   },
   "devDependencies": {
     "@gmjs/pnpm-publish-cli": "^0.0.5",
-    "@types/eslint": "^9.6.0",
-    "@types/node": "^22.1.0",
-    "prettier": "^3.3.3",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.13.10",
+    "prettier": "^3.5.3",
     "shx": "^0.3.4",
-    "typescript": "^5.5.4"
+    "typescript": "^5.8.2"
   },
   "packageManager": "pnpm@10.6.3"
 }
